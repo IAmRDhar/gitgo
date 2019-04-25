@@ -18,7 +18,8 @@ A minimal CLI app to query GitHub users.
 - Single User Query:
 
     ```
-    $ gitfetch -u IAmRDhar
+    $ gitgo -u IAmRDhar
+    $ gitgo --user=IAmRDhar,XYZ
     ```
 
 - Multi-User Query:
