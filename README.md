@@ -18,14 +18,14 @@ A minimal CLI app to query GitHub users.
 - Single User Query:
 
     ```
-    $ gitgo -u IAmRDhar
-    $ gitgo --user=IAmRDhar
+    $ $GOBIN/gitgo -u IAmRDhar
+    $ $GOBIN/gitgo --user=IAmRDhar
     ```
 
 - Multi-User Query:
 
     ```
-    $ gitgo -u IAmRDhar,XYZ    
-    $ gitgo --user=IAmRDhar,XYZ
+    $ $GOBIN/gitgo -u IAmRDhar,XYZ    
+    $ $GOBIN/gitgo --user=IAmRDhar,XYZ
     ```
 
