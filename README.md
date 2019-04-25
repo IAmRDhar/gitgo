@@ -2,14 +2,13 @@
 A minimal CLI app to query GitHub users.
 
 ## Installation
-- `cd {$GOPATH}/src/github.com/{YOUR-GITHUB-USERNAME}/gitgo`
 - `go install`
 
 ## Usage
 - Help:
 
     ```
-    $ gitgo
+    $ $GOBIN/gitgo
     Usage: gitgo [options]
     Options:
         -u, --user string
@@ -20,12 +19,13 @@ A minimal CLI app to query GitHub users.
 
     ```
     $ gitgo -u IAmRDhar
-    $ gitgo --user=IAmRDhar,XYZ
+    $ gitgo --user=IAmRDhar
     ```
 
 - Multi-User Query:
 
     ```
-    $ gitgo -u IAmRDhar,XYZ                                                                                                                                    
+    $ gitgo -u IAmRDhar,XYZ    
+    $ gitgo --user=IAmRDhar,XYZ
     ```
 
