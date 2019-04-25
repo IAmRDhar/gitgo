@@ -5,6 +5,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/IAmRDhar/gitgo/gituser"
 	flag "github.com/ogier/pflag"
 )
 
@@ -25,7 +26,7 @@ func main() {
 	users := strings.Split(user, ",")
 	fmt.Printf("Searching user(s): %s\n", users)
 	for _, u := range users {
-		result := getUsers(u)
+		result := gituser.GetUsers(u)
 		fmt.Println(`Username:	`, result.Login)
 		fmt.Println(`Name:		`, result.Name)
 		fmt.Println(`Email:		`, result.Email)

@@ -1,12 +1,11 @@
-package main
+package gituser
 
 import (
 	"encoding/json"
-	"time"
-	// "fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
+	"time"
 )
 
 const (
@@ -47,7 +46,7 @@ type User struct {
 	UpdatedAt         time.Time   `json:"updated_at"`
 }
 
-func getUsers(name string) User {
+func GetUsers(name string) User {
 	resp, err := http.Get(apiURL + userEndpoint + name)
 	if err != nil {
 		log.Fatalf("Error retrieving data: %s\n", err)
@@ -59,7 +58,7 @@ func getUsers(name string) User {
 	if err != nil {
 		log.Fatalf("Error reading data: %s\n", err)
 	}
-	
+
 	var user User
 	json.Unmarshal(body, &user)
 	return user
