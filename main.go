@@ -30,6 +30,8 @@ func main() {
 		fmt.Println(`Name:		`, result.Name)
 		fmt.Println(`Email:		`, result.Email)
 		fmt.Println(`Bio:		`, result.Bio)
+		fmt.Println(`Company:	`, result.Company)
+		fmt.Println(`Location:	`, result.Location)
 		fmt.Println("")
 	}
 
