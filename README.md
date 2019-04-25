@@ -2,6 +2,7 @@
 A minimal CLI app to query GitHub users.
 
 ## Installation
+- `cd {$GOPATH}/src/github.com/{YOUR-GITHUB-USERNAME}/gitgo`
 - `go install`
 
 ## Usage
